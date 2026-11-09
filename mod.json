@@ -1,0 +1,35 @@
+{
+	"geode": "5.11.2",
+	"gd": {
+		"win": "2.2081",
+		"android": "2.2081",
+		"mac": "2.2081",
+		"ios": "2.2081"
+	},
+	"id": "yourname.mashup-share",
+	"name": "Mashup Share",
+	"version": "v1.1.0",
+	"developer": "YourName",
+	"description": "Upload your own song mashup for any level and replace its music. Everyone can upload one per level, and anyone can pick which one to play.",
+	"repository": "https://github.com/yourname/mashup-share",
+	"tags": [
+		"music",
+		"online",
+		"customization",
+		"interface"
+	],
+	"settings": {
+		"enabled": {
+			"type": "bool",
+			"name": "Enable Mashups",
+			"description": "Play the selected mashup instead of the level's original song.",
+			"default": true
+		},
+		"server-url": {
+			"type": "string",
+			"name": "Server URL",
+			"description": "URL of the Mashup Share server (see the <cy>server/</c> folder). No trailing slash.",
+			"default": "http://localhost:3000"
+		}
+	}
+}
