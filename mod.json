@@ -1,35 +1,55 @@
 {
-	"geode": "5.11.2",
+	"geode": "5.9.0",
 	"gd": {
 		"win": "2.2081",
 		"android": "2.2081",
 		"mac": "2.2081",
 		"ios": "2.2081"
 	},
-	"id": "yourname.mashup-share",
-	"name": "Mashup Share",
-	"version": "v1.1.0",
-	"developer": "YourName",
-	"description": "Upload your own song mashup for any level and replace its music. Everyone can upload one per level, and anyone can pick which one to play.",
-	"repository": "https://github.com/yourname/mashup-share",
-	"tags": [
-		"music",
-		"online",
-		"customization",
-		"interface"
-	],
+	"id": "yourname.percent-clicker",
+	"name": "Percent Clicker",
+	"version": "v1.2.0",
+	"developer": "Lunii",
+	"description": "Press any keybind (or combo like Ctrl+Alt+K) at chosen level percentages, in the game or as a real keyboard press (Discord mute/deafen), and re-press it when you die.",
+	"tags": ["gameplay", "utility", "interface"],
+	"resources": {
+		"sprites": ["resources/*.png"]
+	},
 	"settings": {
+		"general-title": {
+			"type": "title",
+			"name": "General"
+		},
 		"enabled": {
 			"type": "bool",
-			"name": "Enable Mashups",
-			"description": "Play the selected mashup instead of the level's original song.",
+			"name": "Enabled",
+			"description": "Master switch. When off, no rule will ever press a key.",
 			"default": true
 		},
-		"server-url": {
-			"type": "string",
-			"name": "Server URL",
-			"description": "URL of the Mashup Share server (see the <cy>server/</c> folder). No trailing slash.",
-			"default": "http://localhost:3000"
+		"toggle-keybind": {
+			"type": "keybind",
+			"name": "Toggle Keybind",
+			"description": "Turns the whole mod on/off while you are playing.",
+			"default": "F8",
+			"category": "gameplay"
+		},
+		"show-pause-button": {
+			"type": "bool",
+			"name": "Show Pause Menu Button",
+			"description": "Adds the Percent Clicker button to the pause menu. Rules are edited from there.",
+			"default": true
+		},
+		"show-notifications": {
+			"type": "bool",
+			"name": "Show Toggle Notification",
+			"description": "Shows a small notification when you toggle the mod with the keybind.",
+			"default": true
+		},
+		"debug-log": {
+			"type": "bool",
+			"name": "Debug Log",
+			"description": "Logs every simulated key press to the Geode console.",
+			"default": false
 		}
 	}
 }
