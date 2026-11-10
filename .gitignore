@@ -1,3 +1,7 @@
 build/
-server/node_modules/
-server/data/
+build-*/
+.vs/
+.vscode/
+.idea/
+*.geode
+CMakeUserPresets.json
